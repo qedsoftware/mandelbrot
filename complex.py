@@ -8,3 +8,6 @@ class Complex(object):
         return f"{self.a}, {self.b}"
     def __add__(self, other):
         return Complex(self.a + other.a, self.b + other.b)
+
+    def __abs__(self):
+        return (self.a*self.a+self.b*self.b)**(0.5)
